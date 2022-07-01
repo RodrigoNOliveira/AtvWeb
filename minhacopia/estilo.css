@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+
+:root {
+    --principal: #e26446;
+    --escuro: #4a4a4c;
+    --claro: #9d9d9f;
+    --branco: #ffffff;
+    --borda: 0.2rem solid var(--black);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+*::selection {
+    background-color: var(--branco);
+    color: var(--white);
+}
+
+html {
+    font-size: 62.5%; /* Tamanho padrão: 10px; */
+    overflow-x: hidden; /* Caso a larura do site seja maior que o conteúdo, esconda o excesso */
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+}
+.heading img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+.heading h3 {
+    font-size: 4rem;
+    color: var(--black);
+    font-family: 'Montserrat', cursive;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--escuro);
+    color: var(--branco);
+    font-size: 1.5rem;
+    padding: 2rem 4rem;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--principal);
+}
+
+/* .header */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--claro);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    padding: 0.5rem 2rem;
+}
+.header .flex .logo img {
+    height: 3.5rem;
+   
+}
+.header .flex .botoes  {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.header .flex .botoes img {
+    height: 2.5em;
+    margin-left: 3rem;
+
+}
+
+.header .flex .navbar a {
+    margin-left: 6rem;
+    font-size: 1.75rem;
+    color: var(--escuro);
+}
+.header .flex .navbar a:hover {
+    text-decoration: underline;
+    color: var(--principal);
+}
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--escuro);
+    cursor: pointer;
+    display: none;
+}
+
+
+/* .home-bg */
+.home-bg {
+    background: var(--branco);
+    /* background: linear-gradient(90deg, red, transparent 70%); */
+    background-size: cover;
+    background-position: center;
+    
+}
+.home-bg .home {
+    min-height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* gap: 2rem;
+    justify-content: space-between; */
+    
+}
+
+.home-bg .home .content {
+    width: 50rem;
+    text-align:start;
+    margin-left:4rem ;
+}
+.home-bg .home .content h3 {
+    font-size: 3rem;
+    color: var(--escuro);
+    font-family: 'Montserrat';
+}
+.home-bg .home .content p {
+    padding: 1em 0;
+    font-size: 1.4rem;
+    color: var(--claro);
+    line-height: 2;
+}
+
+.home-bg .home .content img {
+    height: 100%;
+    margin-left: 9rem; 
+    
+}
+
+/* .about */
+.about-bg{
+    background: var(--claro);
+    /* background: linear-gradient(90deg, red, transparent 70%); */
+    background-size: cover;
+    background-position: center;
+}
+.about-bg .about {
+    min-width: 40rem;
+    text-align: center;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+
+.about-bg .about .content h3 {
+    font-size: 2.5rem;
+    color: var(--escuro);
+    font-family: 'Montserrat', cursive;
+    padding-bottom: 1rem;
+}
+.about-bg .about .content p {
+    padding: 2rem 0;
+    line-height: 2;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+
+.about-bg .about .box-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.about-bg .about .box-container .box {
+    text-align: center;
+}
+
+.about-bg .about .box-container .box img {
+    height: 20rem;
+    margin-bottom: 0.5rem;
+}
+.about-bg .about  .box-container .box h3 {
+    font-size: 1.8rem;
+    color: var(--escuro);
+    margin: 1rem 0;
+}
+
+.about-bg .about  .box-container .box p {
+    line-height: 2;
+    font-size: 1.3rem;
+    color: var(--branco);
+}
+/* .about .image {
+    flex: grow shrink basis
+    flex: 1 1 60rem;
+}
+.about .image img {
+    width: 100%;
+} */
+
+/* .facility */
+ .facility{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.facility .btn{
+    text-align: center;
+    margin-left: 45%;
+}
+.facility .content h3 {
+    font-size: 2.5rem;
+    color: var(--escuro);
+    font-family: 'Montserrat', cursive;
+    padding-bottom: 1rem;
+}
+.facility .content p {
+    padding: 2rem 0;
+    line-height: 2;
+    color: var(--claro);
+    font-size: 1.5rem;
+    
+}
+
+
+
+.facility .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.facility .box-container .box {
+    text-align: center;
+}
+.facility .box-container .box img {
+    height: 20rem;
+    margin-bottom: 0.5rem;
+}
+.facility .box-container .box h3 {
+    font-size: 1.8rem;
+    color: var(--escuro);
+    margin: 1rem 0;
+}
+.facility .box-container .box p {
+    line-height: 2;
+    font-size: 1.3rem;
+    color: var(--claro);
+}
+
+/* .community-bg */
+.community-bg {
+    background: var(--claro);
+    /* background: linear-gradient(90deg, red, transparent 70%); */
+    background-size: cover;
+    background-position: center;
+    
+}
+.community-bg .community {
+    min-height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.community-bg .community img {
+    height: 100%;
+    margin-right: 9rem;
+    margin-left: 9rem;
+}
+.community-bg .community .content {
+    width: 50rem;
+    text-align:left;
+}
+.community-bg .community .content h3 {
+    font-size: 3rem;
+    color: var(--escuro);
+    font-family: 'Montserrat';
+}
+.community-bg .community .content p {
+    padding: 1em 0;
+    font-size: 1.4rem;
+    color: var(--escuro);
+    line-height: 2;
+}
+
+
+
+.popular{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.popular .btn{
+    text-align: center;
+    margin-left: 45%;
+}
+.popular .content h3 {
+    font-size: 2.5rem;
+    color: var(--escuro);
+    font-family: 'Montserrat', cursive;
+    padding-bottom: 1rem;
+}
+.popular .content p {
+    padding: 2rem 0;
+    line-height: 2;
+    color: var(--claro);
+    font-size: 1.5rem;
+    
+}
+
+
+
+.popular .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.popular .box-container .box {
+    text-align: center;
+}
+.popular .box-container .box img {
+    height: 20rem;
+    margin-bottom: 0.5rem;
+}
+.popular .box-container .box h3 {
+    font-size: 1.8rem;
+    color: var(--escuro);
+    margin: 1rem 0;
+}
+.popular .box-container .box p {
+    line-height: 2;
+    font-size: 1.3rem;
+    color: var(--claro);
+}
+
+
+
+/* .contact */
+.contato-bg{
+    background: var(--escuro);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contato-bg .contato .row {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem;
+    justify-content: space-between;
+    
+    
+}
+
+.contato-bg .contato .row h3{
+    text-align: start;
+    font-size: 2.5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    
+    
+}
+
+.contato-bg .contato .row  p{
+    text-align: start;
+    font-size: 1.5rem;
+    margin-left: 8rem;
+    padding-top: 4rem;
+    gap: 4rem;
+    color: var(--claro);
+    
+} 
+
+.contato-bg .contato .row form {
+    flex: 1 1 40rem;
+    border: var(--borda);
+    padding: 2rem;
+    text-align: left;
+    margin-right: 25rem;
+    
+}
+.contato-bg .contato .row form h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--escuro);
+}
+.contato-bg .contato .row form .box {
+    width: 100%;
+    border: var(--borda);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--escuro);
+    margin: 1rem 0;
+}
+
+
+/* .footer */
+.footer .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1.5rem;
+    align-items: center;
+}
+.footer .box-container .box {
+    text-align:start;
+}
+
+.footer .box-container .box h3 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--escuro);
+}
+.footer .box-container .box p {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    color: var(--claro);
+}
+
+.footer .box-container .box img {
+    height: 6rem;
+
+}
+
+
+
+/*MEDIA QUERY
+Ele Atualzia as propriedades, baseando-se no
+dispositivo de mídia em que o site está sendo
+visualizado
+*/
+/* Usado muito quando vai imprimir o site*/
+/* @media print {
+    body{
+        background-color: white;
+        color: black;
+    }
+    .home-bg{
+        background: none;
+    }
+} */
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+
+/* Tela de Tablete */
+/* @media (max-width: 768px) { */
+    /* MENU DE NAVEGAÇÃO */
+   
+/*     
+    
+
+
+
+    .home-bg .home{
+        justify-content: center;
+    }
+    .home-bg .home .content h3{
+        font-size: 4rem;
+    }
+    .about .content h3 {
+        font-size: 3rem;
+    }
+
+    .facility .box-container,
+    .menu .box-container,
+    .gallery .box-container,
+    .team .box-container,
+    .footer .box-container{
+        grid-template-columns: auto auto; 
+    }
+} */
+
+/* Tela de Smartphone */
+@media (max-width: 450px) {
+   html {
+        font-size: 50%;
+    }
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .flex {
+        text-align: center;
+    }
+    .header .flex .navbar{
+        display: none;
+        position: absolute;
+        background-color: var(--claro);
+        top: 99%;
+        left: 0;
+        right: 0;
+        border-top: var(--borda);
+        border-bottom: var(--borda);
+    }
+    .header .flex .navbar a {
+        display: block;
+        margin: 2rem;
+    }
+    .header .flex .navbar.active{
+        display: block;
+    }
+
+    .home-bg{
+        justify-items: center;
+    }
+
+    .home-bg .home{
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+    .home-bg img {
+        height: 20rem;
+        padding: 2rem;
+    }
+    .home-bg .home .content {
+        text-align: center;
+        margin: auto;
+     }
+    /*.home-bg .home .content h3{
+        font-size: 3rem;
+    } */
+    .facility{
+        text-align: center;
+    }
+    .facility .box-container .box img{
+        height: 16rem;
+    }
+    .facility .btn{
+        margin: auto;
+
+    }
+    .community-bg{
+        justify-items: center;
+    }
+
+    .community-bg .community .content{
+        justify-content: center;
+        text-align: center;
+
+    }
+    .community-bg .community img {
+        height: 20rem;
+        padding: 2rem;
+        margin: 0;
+    }
+    .header .flex .botoes img {
+        margin: auto;
+    
+    }
+    .header .flex .botoes .sino{
+        display: none;
+    }
+    .header .flex .botoes .usuario{
+        display: none;
+    }
+    .community-bg .community .content{
+        text-align: center;
+    }
+    /* .community-bg .community .content h3{
+        font-size: 3rem;
+    }
+    .community-bg .community .content p{
+        font-size: 2rem;
+    } */
+    .about .content h3 {
+        font-size: 3rem;
+    }
+
+    .heading img {
+        height: 3rem;
+    }
+    .heading h3 {
+        font-size: 3rem;
+    }
+
+    .popular .content{
+        text-align: center;
+    }
+    .popular .btn{
+        margin: auto;
+    }
+    .contato-bg .contato .row {
+        flex-wrap: wrap;
+    }
+    .contato-bg .contato .row form {
+        
+        margin: auto;
+        
+    }
+    .about 
+    .contato-bg .contato .row  p{
+        text-align: center;
+        margin: auto;
+    } 
+    .contato-bg .contato .row  h3{
+        text-align: center;
+        margin: auto;
+        
+    } 
+    .footer .box-container .box {
+        text-align:center;
+    }
+
+    .popular .box-container .box img {
+        height: 16rem;
+        
+    }
+    .home-bg .home,
+    .about-bg .about .box-container,
+    .facility .box-container,
+    .popular .box-container,
+    .menu .box-container,
+    .gallery .box-container,
+    .team .box-container,
+    .footer .box-container{
+        grid-template-columns: auto auto; 
+    }
+
+}
