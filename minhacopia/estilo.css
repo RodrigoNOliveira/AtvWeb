@@ -533,14 +533,21 @@ visualizado
     .header .flex .navbar.active{
         display: block;
     }
-
-    .home-bg{
-        justify-items: center;
+    .header .flex .botoes img {
+        margin: auto;
+    
     }
-
+    .header .flex .botoes .sino{
+        display: none;
+    }
+    .header .flex .botoes .usuario{
+        display: none;
+    }
+    
+   
+   
     .home-bg .home{
         justify-content: center;
-        text-align: center;
         flex-wrap: wrap;
 
     }
@@ -552,9 +559,8 @@ visualizado
         text-align: center;
         margin: auto;
      }
-    /*.home-bg .home .content h3{
-        font-size: 3rem;
-    } */
+
+
     .facility{
         text-align: center;
     }
@@ -565,42 +571,32 @@ visualizado
         margin: auto;
 
     }
-    .community-bg{
-        justify-items: center;
-    }
+
+
 
     .community-bg .community .content{
-        justify-content: center;
         text-align: center;
 
     }
     .community-bg .community img {
         height: 20rem;
         padding: 2rem;
-        margin: 0;
-    }
-    .header .flex .botoes img {
         margin: auto;
-    
     }
-    .header .flex .botoes .sino{
-        display: none;
-    }
-    .header .flex .botoes .usuario{
-        display: none;
-    }
-    .community-bg .community .content{
+   
+    .popular .content{
         text-align: center;
     }
-    /* .community-bg .community .content h3{
-        font-size: 3rem;
+    .popular .btn{
+        margin: auto;
     }
-    .community-bg .community .content p{
-        font-size: 2rem;
-    } */
-    .about .content h3 {
-        font-size: 3rem;
+    .popular .box-container .box img {
+        height: 16rem;
+        
     }
+
+
+   
 
     .heading img {
         height: 3rem;
@@ -609,21 +605,15 @@ visualizado
         font-size: 3rem;
     }
 
-    .popular .content{
-        text-align: center;
-    }
-    .popular .btn{
-        margin: auto;
-    }
+   
     .contato-bg .contato .row {
         flex-wrap: wrap;
+        text-align: center;
+        margin: auto;
     }
     .contato-bg .contato .row form {
-        
         margin: auto;
-        
     }
-    .about 
     .contato-bg .contato .row  p{
         text-align: center;
         margin: auto;
@@ -633,21 +623,15 @@ visualizado
         margin: auto;
         
     } 
-    .footer .box-container .box {
+    /* .footer .box-container .box {
         text-align:center;
-    }
+    } */
 
-    .popular .box-container .box img {
-        height: 16rem;
-        
-    }
-    .home-bg .home,
+   
+
     .about-bg .about .box-container,
     .facility .box-container,
     .popular .box-container,
-    .menu .box-container,
-    .gallery .box-container,
-    .team .box-container,
     .footer .box-container{
         grid-template-columns: auto auto; 
     }
